@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context=".ui.home.HomeFragment">
+
+    <TextView
+        android:id="@+id/tvTouchImages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="16dp"
+        android:textColor="#737373"
+        android:text="Touch the image that best captures how stressed you feel right now"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_below="@+id/tvTouchImages"
+        android:layout_above="@+id/btnMoreImages"
+        android:layout_gravity="center" />
+
+    <Button
+        android:id="@+id/btnMoreImages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/grey"
+        android:layout_marginBottom="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="@color/black"
+        android:text="More Images"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>

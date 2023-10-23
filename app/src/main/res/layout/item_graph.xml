@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_border">
+
+    <TextView
+        android:id="@+id/timestampTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:text="1234445"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="25dp"
+        android:background="@color/black"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/stressValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="2"
+        android:padding="5dp"
+        android:textSize="15sp"
+        android:textColor="#000000" />
+</RelativeLayout>
